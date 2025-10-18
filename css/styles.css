@@ -14,6 +14,15 @@ img {
 }
 .visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
 }
 h1,
 h2,
@@ -142,7 +151,7 @@ button {
 }
 
 .hero-section-title {
-  width: 496px;
+  max-width: 496px;
   color: #fff;
   font-weight: 700;
   font-size: 56px;
@@ -153,7 +162,7 @@ button {
   text-align: center;
 }
 .hero-button {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background: #4d5ae5;
   font-weight: 500;
@@ -232,10 +241,10 @@ button {
   gap: 48px 24px;
 }
 .portfolio-list-item {
-  width: calc((100% - 24px * 2) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-item-text {
-  padding: 32px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
